@@ -153,8 +153,8 @@ async def start_command(client: Client, message: Message):
                 link = await get_shortlink(SHORTLINK_API_URL, SHORTLINK_API_KEY,f'https://telegram.dog/{client.username}?start=verify_{token}')
                 if USE_PAYMENT:
                     btn = [
-                    [InlineKeyboardButton("Click Here To Refresh Token", url=link),
-                    InlineKeyboardButton('How to open this link ', url=TUT_VID)],
+                    [InlineKeyboardButton("Click Here To Refresh Token", url=link)],
+                    [InlineKeyboardButton('How to open this link ', url=TUT_VID)],
                     [InlineKeyboardButton("Buy Premium plan", callback_data="buy_prem")]
                     ]
                 else:
