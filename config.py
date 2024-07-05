@@ -8,8 +8,8 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #force user to join your backup channel leave 0 if you don't need.
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002110650439"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002029983869"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002144945669"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002217521757"))
 
 if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
     temp = FORCE_SUB_CHANNEL2 
@@ -22,21 +22,21 @@ BOT_STATS_TEXT = os.environ.get("BOTS_STATS_TEXT","<b>BOT UPTIME</b>\n{uptime}")
 USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "❌Don't send me messages directly I'm only File Share bot!")
 
 #your bot token here from https://telegram.me/BotFather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7038802965:AAHMwD8K6xB-hL6ZXc-I5lNls1W5PxNLum8") 
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7150371105:AAErbwhOlVJNWKzRL-Eusa8BLViAGgpr2kM") 
 #your api id from https://my.telegram.org/apps
-APP_ID = int(os.environ.get("APP_ID", "13247047"))
+APP_ID = int(os.environ.get("APP_ID", "29580054"))
 #your api hash from https://my.telegram.org/apps
-API_HASH = os.environ.get("API_HASH", "93094dbc774dea2614112ca5051a703b")
+API_HASH = os.environ.get("API_HASH", "8c12aad7243d77767ad428e01b630034")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002119927767"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002180276402"))
 #your database channel link
-CHANNEL_LINK = os.environ.get("CHANNEL_LINK", "https://t.me/+QBtPszazg_phOWNk")
+CHANNEL_LINK = os.environ.get("CHANNEL_LINK", "https://t.me/ldb_database")
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", "7190880809"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5057842745"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://sa8619:mongodb+srv://hamzann:hamza00@cluster0.id2lo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://Devhub:Fes9abgab9@botdatabase.5hdjtp3.mongodb.net/?retryWrites=true&w=majority&appName=BotDatabase")
 #your database name
 DB_NAME = os.environ.get("DB_NAME", "BoysChipsbot")
 
@@ -45,9 +45,9 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 #your start default command message.
 START_MSG = os.environ.get("START_MESSAGE", "Hello {mention}\n\nI'm official bot of providing videos for @Inkalinks Channel!")
 #your telegram tag without @
-OWNER_TAG = os.environ.get("OWNER_TAG", "inkax")
+OWNER_TAG = os.environ.get("OWNER_TAG", "owner_tag_here")
 #Time in seconds for message delete
-TIME = int(os.environ.get("TIME", "600"))
+TIME = int(os.environ.get("TIME", "10"))
 
 
 #Shortner (token system) 
@@ -58,16 +58,16 @@ https://dashboard.shareus.io/
 
 # Turn this feature on or off using True or False put value inside  ""
 # TRUE for yes FALSE if no 
-USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "FALSE") == "TRUE" else False 
+USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
-SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "api.shareus.io")
+SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "modijiurl.com")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "s5xbyvzACdRYEoUwabkEEEwQyw32")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "48ec4a68cf9755089d39300e8395d49a9db2be8f")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
-VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', "86400")) # Add time in seconds
+VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', "43200")) # Add time in seconds
 #Tutorial video for the user of your shortner on how to download.
 TUT_VID = os.environ.get("TUT_VID","https://t.me/sotutorials/10")
 
